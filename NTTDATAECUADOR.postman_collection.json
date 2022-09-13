@@ -1,0 +1,544 @@
+{
+	"info": {
+		"_postman_id": "6ea08578-d8b6-4f75-bb7d-e6e644665b50",
+		"name": "NTTDATAECUADOR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"identificacion\": \"1720445715\",\r\n        \"nombre\": \"Gabriel\",\r\n        \"direccion\": \"Quito\",\r\n        \"apellido\": \"Borja\",\r\n        \"estado\": true,\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": \"35\",\r\n        \"telefono\": \"0995787383\",\r\n        \"contraseña\": \"1234\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/12",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"identificacion\": \"1720445715\",\r\n        \"nombre\": \"Gabriel\",\r\n        \"direccion\": \"Quito\",\r\n        \"apellido\": \"Borja\",\r\n        \"estado\": true,\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": \"35\",\r\n        \"telefono\": \"0995787384\",\r\n        \"contraseña\": \"1234\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/12",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuentas/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuentas/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/idUsuario/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuentas/idUsuario/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"idUsuario",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/numeroCuenta/?numeroCuenta=4ee3d135",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuentas/numeroCuenta/?numeroCuenta=4ee3d135",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"numeroCuenta",
+						""
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "4ee3d135"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {    \r\n        \"numeroCuenta\": \"SE GENERA AUTOMATICAMENTE\",\r\n        \"idUsuario\": 1,\r\n        \"tipo\": \"Corriente\",\r\n        \"estado\": true,\r\n        \"saldo\": 1000.0\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/13",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 16,\r\n    \"numeroCuenta\": \"172af557\",\r\n    \"idUsuario\": 2,\r\n    \"tipo\": \"Ahorros\",\r\n    \"estado\": true,\r\n    \"saldo\": 545.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/13",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuentas/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movimientos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movimientos/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movimientos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movimientos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"8e31a6e1\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEBITO\",\r\n        \"valor\": 1000\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/movimientos/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movimientos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimiento1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"1b1df36e\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEBITO\",\r\n        \"valor\": 575\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimiento2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"2dbd7637\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEPOSITO\",\r\n        \"valor\": 600\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimiento3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"48744950\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEPOSITO\",\r\n        \"valor\": 150\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimiento4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"172af557\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEBITO\",\r\n        \"valor\": 540\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REPORTE MOVIMIENTOS POR IDCUENTA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"8e31a6e1\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEBITO\",\r\n        \"valor\": 1000\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/idCuenta/15",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						"idCuenta",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REPORTE MOVIMIENTOS COMPLETO POR NUMERO DE CUENTA ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroCuenta\": \"8e31a6e1\",\r\n        \"fecha\": \"2022/09/12\",\r\n        \"saldo\": 1000.0,\r\n        \"tipoMovieminto\": \"DEBITO\",\r\n        \"valor\": 1000\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos/reporte/?numeroCuenta=1b1df36e",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos",
+						"reporte",
+						""
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "1b1df36e"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
