@@ -16,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -150,8 +151,10 @@ public class MovimientosService {
                 responseMovimientoDTO.setMovimiento(movimientos.get(i).getValor().toString());
                 responseMovimientoDTO.setSaldoDisponible(movimientos.get(i).getSaldo().toString());
                 responseMovimientoDTO.setEstado(true);
-                System.out.println(responseMovimientoDTO);
+                LocalDate x= LocalDate.of(1987,01,01);
+                System.out.println(LocalDate.now().compareTo(x));
                 responseMovimientoDTO1.add(responseMovimientoDTO);
+
             }
            return ResponseEntity.ok(responseMovimientoDTO1);
         }catch (HttpClientErrorException ex) {
